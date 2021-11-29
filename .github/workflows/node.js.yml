@@ -21,7 +21,6 @@ jobs:
       with:
         node-version: '16.13.0'
         cache: 'npm'
-    - name: Install dependencies
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
